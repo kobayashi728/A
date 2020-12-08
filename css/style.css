@@ -1,0 +1,331 @@
+@charset "UTF-8";
+body {
+  line-height: 1.7;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    "游ゴシック Medium", YuGothic, YuGothicM, sans-serif;
+  color: #000;
+}
+a,
+a:link {
+  color: #3585b7;
+}
+a:visited {
+  color: #6252b7;
+}
+a:hover {
+  text-decoration: none;
+  color: #555;
+}
+
+/* header */
+header h1 img {
+  width: 250px;
+}
+header {
+  display: flex;
+}
+header nav {
+  margin: 0 0 0 auto;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 20px 0;
+}
+header nav ul li a {
+  font-size: 17px;
+}
+header nav ul li a,
+header nav ul li a:link,
+header nav ul li a:visited {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 15px;
+}
+header nav ul li a:hover {
+  color: #888;
+}
+/* main */
+main {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+main .inner {
+  margin: 25px auto;
+}
+.home main {
+  padding-left: 0;
+}
+.home main .inner {
+  margin-bottom: 0;
+}
+main .title h1 {
+  color: #555;
+}
+main .title ol {
+  list-style-type: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: flex;
+}
+main .title ol li {
+  font-size: 15px;
+}
+main .title ol li::after {
+  content: ">";
+  margin: 0 5px 0 10px;
+}
+main .title ol li:last-child::after {
+  content: none;
+}
+
+/*index.html*/
+.home main .inner {
+  background: url(../images/home.jpg) no-repeat center top;
+  opacity: 0.7;
+  height: 1280px;
+  padding: 200px 150px 50px;
+  box-sizing: border-box;
+}
+.home main .inner p {
+  font-size: 22px;
+  color: #ff1493;
+  font-weight: bold;
+}
+.home main .inner p.catch {
+  font-size: 45px;
+  color: #c71585;
+  font-weight: bold;
+}
+
+/*job.html*/
+.job main .inner .top span.purpose {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  padding-left: 13px;
+  line-height: 40px;
+}
+.job main .content p img {
+  float: left;
+  margin-right: 20px;
+}
+.job main .content p.explain {
+  padding-top: 5em;
+  font-size: 18px;
+  line-height: 38px;
+}
+.job main .content .content_2 h2 {
+  clear: left;
+  padding-top: 15px;
+}
+.job main .content .content_3 h2 {
+  clear: left;
+  padding-top: 5px;
+}
+.job main .content .content_3 p.explain {
+  padding-top: 6em;
+}
+.job main .content .content_3 p img {
+  padding-bottom: 5px;
+}
+
+/*knowledge.html*/
+.knowledge main .top {
+  font-size: 18px;
+}
+.knowledge main p.explain {
+  font-size: 18px;
+  line-height: 2em;
+}
+.knowledge main .content_1 p img {
+  float: left;
+  margin-right: 20px;
+}
+.knowledge main .content_1 span.red {
+  color: red;
+  font-weight: bold;
+}
+.knowledge main .content .content_2 h2 {
+  clear: left;
+  padding-top: 15px;
+}
+.knowledge main .content_2 p img {
+  float: right;
+  margin-left: 50px;
+}
+.knowledge main .content_2 span.hot {
+  color: red;
+  font-weight: bold;
+}
+.knowledge main .content_2 span.hot {
+  color: blue;
+  font-weight: bold;
+}
+
+.knowledge main .link {
+  clear: right;
+  padding-top: 40px;
+}
+
+/*contact.html*/
+.contact dl {
+  width: 990px;
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+}
+.contact dl dt {
+  float: left;
+  padding: 1em;
+  color: #009966;
+}
+.contact dl dt .must {
+  color: #ff0000;
+}
+.contact dl dd {
+  border-bottom: 1px solid #cccccc;
+  margin: 0;
+  padding: 1em 0 1em 20em;
+}
+.contact input[type="e-mail"] {
+  width: 50%;
+}
+.contact input {
+  font-size: 1em;
+  padding: 5px;
+}
+.contact label {
+  margin-right: 1em;
+}
+.contact select {
+  font-size: 1em;
+  padding: 2px;
+}
+.contact textarea {
+  font-size: 1em;
+  width: 30em;
+  padding: 5px;
+}
+.contact p.submit {
+  text-align: center;
+}
+.contact input[type="submit"] {
+  padding: 20px 100px;
+  background: #009966;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 8px;
+}
+.contact input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/*privacy.html*/
+.privacy main .inner dl {
+  width: 990px;
+  padding-left: 150px;
+}
+
+.privacy main .inner dl dt {
+  color: #6495ed;
+  font-weight: bold;
+  float: left;
+  padding: 1em;
+  padding-left: 0;
+}
+.privacy main .inner dl dd {
+  margin: 0;
+  padding: 1em 0 1em 10em;
+  border-bottom: 1px solid #e6e6fa;
+}
+.privacy main .inner h2 {
+  color: #6495ed;
+}
+
+/*sitemap.html*/
+.sitemap main .inner {
+  padding-left: 120px;
+}
+.sitemap ul li {
+  padding: 7px;
+}
+.sitemap ul li.indent {
+  list-style-type: none;
+  padding-left: 25px;
+  padding-top: 5px;
+}
+.sitemap ul li.indent::before {
+  content: "――";
+}
+/*calculation.html*/
+.calculation main .content p.question {
+  font-size: 18px;
+  line-height: 1.8em;
+}
+.calculation main .content_1 p img {
+  float: left;
+  margin-right: 60px;
+}
+.calculation main .content_1 p.explain_1 {
+  font-size: 18px;
+  line-height: 2em;
+  padding-top: 20px;
+  clear: left;
+  visibility: hidden;
+}
+.calculation main .content_2 p img {
+  float: left;
+  margin-right: 60px;
+}
+.calculation main .content_2 p.explain_2 {
+  font-size: 18px;
+  line-height: 2em;
+  padding-top: 20px;
+  clear: left;
+  visibility: hidden;
+}
+#answer_1,
+#answer_2 {
+  font-size: 40px;
+  visibility: hidden;
+}
+#answer_1 {
+  color: red;
+}
+#answer_2 {
+  color: blue;
+}
+/* footer */
+footer {
+  background: #fffaf0;
+  padding: 20px;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0 0 5px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+footer li {
+  margin: 0 0 0 20px;
+}
+footer ul li a,
+footer ul li a:link,
+footer ul li a:visited {
+  text-decoration: none;
+  font-size: 13px;
+  color: #000;
+}
+footer ul li a:hover {
+  color: #888;
+}
+footer p {
+  text-align: right;
+  color: #888;
+}
